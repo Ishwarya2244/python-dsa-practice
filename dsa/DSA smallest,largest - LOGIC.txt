@@ -1,0 +1,70 @@
+🎯 Step-by-Step Thinking
+
+Start like this:
+
+👉 “I don’t know anything yet”
+
+So:
+
+smallest = very big (∞)
+second smallest = very big (∞)
+Now check each number like a game 🎮
+Number = 5
+
+👉 Is 5 < smallest? YES
+➡️ smallest = 5
+
+Number = 2
+
+👉 Is 2 < smallest (5)? YES
+➡️ second smallest = 5
+➡️ smallest = 2
+
+Number = 8
+
+👉 Is 8 < smallest (2)? NO
+👉 Is 8 < second smallest (5)? NO
+➡️ Ignore
+
+Number = 1
+
+👉 Is 1 < smallest (2)? YES
+➡️ second smallest = 2
+➡️ smallest = 1
+
+🏆 Final Answer
+smallest = 1 🥇
+second smallest = 2 🥈
+💡 Super Simple Rule (Remember This!)
+
+👉 If new number is very small:
+
+push old smallest to second
+update smallest
+
+👉 Else if it’s just next small:
+
+update second smallest
+
+
+
+
+
+""" first 3 is compare to smallest and upadate smallest as 3 now 9 is compare that if less than smalest upadte smallest as 9 or update second smallest as 9 ntxt compare 1 , 1 is less than smallest so 1 moves to smallest and 3 moves to second smallest now 6 compares , 6 ignore bc it's greater than both  ""
+
+
+if duplicates appear it will also ignore "
+
+Find maximum element in array
+
+Array:
+
+[10, 3, 7, 15, 6]
+
+👉 Tell me ONLY logic steps 
+
+ANS::   1.assign first as maximum 
+2. loop through each element 
+3. compare with maximum 
+4. if current elemnt is greater than maximum than update as maximum 
+5.return maximum element
