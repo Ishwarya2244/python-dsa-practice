@@ -1,0 +1,74 @@
+🔹 Question 1
+arr = [2, 4, 6, 8, 10]
+count = 0
+for i in arr:
+    if i > 5:
+        count += 1
+
+*Logic:
+1.intialize count
+2.loop through each element
+3.check condition if current element is > 5
+4.increase count by 1
+5.print(count)
+
+*TIme complexity=O(n)
+*Space complexity=O(1)
+
+
+Question 2 (Little Thinking)
+arr = [1, 2, 3, 4]
+for i in arr:
+    for j in arr:
+        if i == j:
+            print(i)
+
+*Logic:
+1.loop through each element 
+2. check if index and element equal 
+3.print element one by one
+*TIme=O(n2)
+*Space=O(1)
+
+🟢 LEVEL 1 (Easy)
+🔹 Q1
+x = 10
+y = 20
+print(x + y) #T=O(1) S=O(1)
+🔹 Q2
+for i in arr:
+    print(i) #T=O(n) S=O(1)
+🔹 Q3
+result = []
+for i in arr:
+    result.append(i)#T=O(n) S=O(n)
+🟡 LEVEL 2 (Medium)
+🔹 Q4
+for i in arr:
+    for j in arr:
+        print(i * j) #T=O(n2) S=O(1)
+🔹 Q5
+temp = arr #T=O(1) S=O(1)
+🔹 Q6
+temp = arr.copy() #T=O(n) S=O(n)
+🔴 LEVEL 3 (Slight Thinking)
+🔹 Q7
+count = 0
+for i in arr:
+    for j in arr:
+        if i == j:
+            count += 1 #T=O(n2) S=O(1)
+🔹 Q8
+new_arr = []
+for i in arr:
+    if i % 2 == 0:
+        new_arr.append(i) #T=O(n) S=O(n)
+
+for j in new_arr:
+    print(j)
+🔹 Q9
+for i in arr:
+    print(i)
+
+for j in arr:
+    print(j) #T=O(n) S=O(1)
