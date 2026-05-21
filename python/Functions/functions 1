@@ -1,0 +1,29 @@
+##Question 1
+##
+##Create a function that prints your name.
+##
+def name():
+    print("Aishu")
+name()
+
+
+##Question 2
+##
+##Create a function that takes two numbers and prints their multiplication.
+
+def multiply(a,b):
+    print(a*b)
+multiply(4,5)
+
+
+##Question 3
+##
+##Create a function that returns the largest of two numbers.
+
+def large(a,b):
+    if a>b:
+        return a
+    else:
+        return b
+result=large(10,7)
+print(result)
