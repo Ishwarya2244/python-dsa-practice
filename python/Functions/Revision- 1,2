@@ -1,0 +1,141 @@
+Python Basics Revision — Day 1 & Day 2
+1. What is Python?
+
+Python is a high-level, interpreted, and easy-to-learn programming language used for:
+
+web development,
+AI,
+data science,
+automation,
+APIs,
+and software development.
+2. What is a Function?
+
+A function is a reusable block of code used to perform a specific task.
+
+Functions help:
+
+reduce repeated code,
+organize programs,
+improve readability.
+Example
+def greet():
+    print("Hello")
+
+greet()
+3. Types of Functions Learned
+Function without parameters
+def hello():
+    print("Welcome")
+Function with parameters
+def add(a, b):
+    print(a + b)
+Function with return value
+def square(n):
+    return n * n
+4. Difference Between print() and return
+print()	return
+Displays output	Sends value back
+Used for showing result	Used for storing/reusing result
+Cannot reuse easily	Returned value can be reused
+Example using print()
+def add(a,b):
+    print(a+b)
+Example using return()
+def add(a,b):
+    return a+b
+5. What is a List?
+
+A list is a collection used to store multiple values in a single variable.
+
+Example
+numbers = [1, 2, 3, 4]
+6. What is Indexing?
+
+Indexing is used to access elements in a list.
+
+Index starts from 0.
+
+Example
+fruits = ["apple", "banana", "mango"]
+
+print(fruits[0])
+Output
+apple
+7. What is a Loop?
+
+A loop is used to repeat a block of code multiple times.
+
+8. What is a for loop?
+
+A for loop is used to iterate through elements one by one.
+
+Example
+numbers = [1, 2, 3]
+
+for x in numbers:
+    print(x)
+9. What is an if condition?
+
+An if condition is used to make decisions in a program.
+
+Example
+age = 18
+
+if age >= 18:
+    print("Eligible")
+10. What is append() in Python?
+
+append() is used to add an element to the end of a list.
+
+Example
+numbers = [1, 2, 3]
+
+numbers.append(4)
+
+print(numbers)
+Output
+[1, 2, 3, 4]
+11. Difference Between = and ==
+=	==
+Assignment operator	Comparison operator
+Assigns value	Checks equality
+Example
+a = 5
+a == 5
+12. Why are loops important?
+
+Loops help:
+
+reduce repeated code,
+process data efficiently,
+implement logic,
+handle large amounts of data easily.
+13. Why are functions important?
+
+Functions:
+
+improve code reusability,
+reduce repetition,
+organize programs,
+make debugging easier.
+14. What is a parameter in a function?
+
+A parameter is a variable passed into a function.
+
+Example
+def add(a, b):
+
+Here:
+
+a, b
+
+are parameters.
+
+15. What is return used for?
+
+return sends a value back from a function so it can be stored or reused.
+
+Example
+def square(n):
+    return n * n
