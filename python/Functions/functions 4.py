@@ -1,17 +1,17 @@
-##Strings + User Input + String Methods
-##strings are used everywhere:
-##
-##chatbots
-##login systems
-##APIs
-##AI/NLP
-##websites
-##forms
-##search systems
-##
-##Almost every real application handles text.
-##Part 1 — What is a String?
-##
+Strings + User Input + String Methods
+strings are used everywhere:
+
+chatbots
+login systems
+APIs
+AI/NLP
+websites
+forms
+search systems
+
+Almost every real application handles text.
+Part 1 — What is a String?
+
 ##A string is text/data written inside quotes.
 ##
 ##Example
