@@ -11,36 +11,32 @@ search systems
 
 Almost every real application handles text.
 Part 1 — What is a String?
+A string is text/data written inside quotes.
+Example
+name = "Ishu"
 
-##A string is text/data written inside quotes.
-##
-##Example
-##name = "Ishu"
-##
-##Part 2 — Accessing Characters
-##
-##Strings also use indexing.
-##Part 3 — String Methods
-##Methods are built-in functions for strings.
-##1. upper()
-##Converts to uppercase.
-##2. lower()
-##Converts to lowercase.
-##3. capitalize()
-##Makes first letter capital.
-##4. len()
-##Finds string length.
-##Part 4 — User Input
-##
-##Programs can take input from users.
-##
-##Part 5 — Combining Strings
-##first = "Ishu"
-##last = "R"
-##
-##full = first + " " + last
-##
-##print(full)
+Part 2 — Accessing Characters
+Strings also use indexing.
+    
+Part 3 — String Methods
+Methods are built-in functions for strings.
+1. upper()
+Converts to uppercase.
+2. lower()
+Converts to lowercase.
+3. capitalize()
+Makes first letter capital.
+4. len()
+Finds string length.
+    
+Part 4 — User Input
+Programs can take input from users.
+
+Part 5 — Combining Strings
+first = "Ishu"
+last = "R"
+full = first + " " + last
+print(full)
 
 ##
 ##Practice questions :
