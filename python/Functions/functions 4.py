@@ -38,59 +38,58 @@ last = "R"
 full = first + " " + last
 print(full)
 
-##
-##Practice questions :
+Practice questions 
 
-    
-##Question 1
-##
-##Create a string variable called:
-##
+Question 1
+Create a string variable called:
 name="college"
 print(name)
 
-##
-##Question 2
-##
-##Print the first character of this string:
+Question 2
+Print the first character of this string:
 
 city = "Hosur"
 print(city[0])
 
-
-##Question 3
-##Convert this string into uppercase:
-##
+Question 3
+Convert this string into uppercase:
 name = "ishu"
 print(name.upper())
 
-##Question 4
-##Find the length of this string:
-
+Question 4
+Find the length of this string:
 language = "Python"
 print(len(language))
 
-##Question 5
-##Take user input for name and print:
-##
-##Hello <name>
+Question 5
+Take user input for name and print:
+Hello <name>
 
 name=input("enter your name:")
 print("Hello" , name)
 
-
-##Question 6
-##Combine two strings:
-
-##first_name
-##last_name
-##and print full name.
+Question 6
+Combine two strings:
+first_name
+last_name
+and print full name.
 
 first_name="Ishwarya"
 last_name="Shetty"
 print(first_name + " " +last_name)
 
 
+*********** “Strings are important in programming
+because theyhelp process, analyze, access,
+and organize text data.”*****************
+
+
+
+Difference between list and string
+List	String
+Stores multiple values	Stores text
+Uses [ ]	Uses quotes " "
+Mutable	Immutable
 
 
 
