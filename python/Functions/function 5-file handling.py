@@ -67,11 +67,10 @@ file.close()
 File content becomes:
 Welcome Ishu
 Python Learning
+
 Part 6 — Why close() is Important?
 file.close()
-
 It:
-
 saves changes properly,
 frees memory,
-closes file safely.
+closes file safely.   """"file.close() is used to close the file properly, save changes, and free system resources."""
