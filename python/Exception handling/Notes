@@ -1,0 +1,112 @@
+Day 6 — Exception Handling
+Part 1 — What is an Exception?
+
+An exception is an error that occurs while a program is running.
+
+Example:
+
+num = int("abc")
+
+Output:
+
+ValueError
+
+Because "abc" cannot be converted to an integer.
+
+Part 2 — Why Use Exception Handling?
+
+Without exception handling:
+
+num = int(input("Enter a number: "))
+print(num)
+
+If the user enters:
+
+abc
+
+The program crashes.
+
+❌ Bad user experience.
+
+Part 3 — try and except
+try:
+    num = int(input("Enter a number: "))
+    print(num)
+
+except:
+    print("Invalid input")
+How it works
+try → Python tries to execute the code.
+except → Runs only if an error occurs.
+Example
+
+Input:
+
+10
+
+Output:
+
+10
+
+Input:
+
+abc
+
+Output:
+
+Invalid input
+Part 4 — Specific Exceptions
+
+Instead of catching every error:
+
+try:
+    num = int(input("Enter a number: "))
+except ValueError:
+    print("Please enter numbers only")
+
+This is better practice.
+
+Part 5 — ZeroDivisionError
+
+Example:
+
+try:
+    result = 10 / 0
+    print(result)
+
+except ZeroDivisionError:
+    print("Cannot divide by zero")
+
+Output:
+
+Cannot divide by zero
+Part 6 — else Block
+
+else runs only if there is NO error.
+
+try:
+    num = int(input("Enter number: "))
+
+except ValueError:
+    print("Invalid input")
+
+else:
+    print("Valid number")
+Part 7 — finally Block
+
+finally always runs.
+
+try:
+    num = int(input("Enter number: "))
+
+except ValueError:
+    print("Invalid input")
+
+finally:
+    print("Program ended")
+
+Even if an error occurs:
+
+Program ended
+
+will always print.
