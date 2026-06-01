@@ -1,0 +1,290 @@
+Day 1 Revision — Functions
+Question 1
+
+What is a function?
+function is a reusable block of code to perform a specific
+tasks.
+
+Question 2
+
+Why do we use functions in programming? Give any 2 advantages.
+1.to reuse code
+2.less code
+3.Makes programs easier to maintain and debug
+Question 3
+
+What is the difference between:
+
+print()
+used to display .. 
+and
+return
+used to store the result 
+Question 4
+
+Identify the parameters and arguments:
+
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+Parameters = ? a,b
+Arguments = ? 5,3
+Question 5
+
+What will be the output?
+
+def greet():
+    print("Hello")
+
+greet()
+output: Hello
+Question 6
+
+What will be the output?
+
+def square(num):
+    return num * num
+
+print(square(4))
+16
+Question 7
+
+Find the mistake:
+
+def add(a, b):
+    print(a + b) # should come return a+b
+
+result = add(2, 3)
+
+print(result)
+
+What value will result contain?
+5
+
+Question 8
+
+Write a function named:
+
+multiply
+def multiply(a,b):
+    return a*b
+
+that takes two numbers and returns their multiplication.
+
+(No need to write a full program, just the function.)
+
+Question 9
+
+True or False?
+
+A function can be called multiple times after it is defined.
+True
+Question 10
+
+Which keyword sends a value back from a function?
+return
+
+
+Why are functions important in programming?
+to resuse the code , for efficient programming 
+
+
+Day 2 Revision — Lists & Loops
+
+Question 1
+
+What is a list?
+list is a collection of elements stored in a single variable
+
+Question 2
+
+Which brackets are used for lists?
+[]
+
+Question 3
+
+What is indexing?
+indexing is the position wre elements stored in a list 
+Question 4
+
+What is the index of:
+
+First element?0
+Second element?1
+Third element?2
+Question 5
+
+What will be the output?
+
+fruits = ["apple", "orange", "mango"]
+
+print(fruits[1])
+orange
+Question 6
+
+Which method is used to add an element at the end of a list?
+append
+Question 7
+
+What will be the output?
+
+numbers = [10, 20, 30]
+
+for x in numbers:
+    print(x)
+10
+20
+30
+Question 8
+
+What is a loop?
+loop is a repeated block of code multiple times 
+
+Question 9
+
+What is the purpose of a for loop?
+for loop used to repeat and check each element in a list
+
+Question 10
+
+What will be the output?
+
+marks = [20, 40, 80]
+
+for x in marks:
+    if x >= 35:
+        print("Pass")
+    else:
+        print("Fail")
+fail
+pass
+pass
+
+Small Logic Question
+
+You have:
+
+names = ["Ishu", "Ram", "Priya"]
+
+How would you print only "Ram"?
+print(names[1])
+
+
+Why are loops important in programming?
+
+to check each element one by one by suing loop .
+Loops are important because they allow us to process multiple items
+automatically without writing the same code repeatedly.
+
+Revision Test (Days 3–6)
+1. Dictionaries
+
+What is a dictionary?
+dictionary is used to store data in key value format 
+
+Give one example of a key-value pair.
+'name':'i'
+
+2. Dictionary Update
+
+Complete the code:
+
+student = {
+    "name": "Ishu",
+    "age": 20
+}
+student["age"]=21
+
+
+# Update age to 21
+3. Dictionary Loop
+
+What will be the output?
+
+employee = {
+    "name": "John",
+    "role": "Developer"
+}
+
+for key in employee:
+    print(employee[key])
+John
+Developer
+4. Strings
+
+What is a string?
+string is a text or data 
+
+Which quotes can be used to create a string?
+double quotes
+
+5. String Methods
+
+What do these do?
+
+upper() - converts to uppercase
+lower() - converts to lowercase
+len()-gives length of a string
+6. User Input
+
+Write one line of code to take a
+user's name as input and store
+it in a variable called name.
+name=input("enter your name")
+
+7. File Handling
+
+What are the purposes of:
+
+r=to read a file
+w=to write a file
+a=to append a file (to add content at last of the file)
+
+in file handling?
+
+8. File Handling Logic
+
+What is the difference between:
+
+file.write()
+Write data into a file.
+
+Whether it overwrites depends on how the file was opened (w mode).
+and
+
+file.read()
+used to read a file and also to display
+9. Exception Handling
+
+What are the purposes of:
+
+try=used to run the code
+except=to handle errors
+else=runs if no error occurs
+finally=runs always
+
+(One line each)
+
+10. Error Types
+
+Which exception occurs here?
+
+int("hello")
+ValueError
+
+And which exception occurs here?
+
+10 / 0
+ZeroDivisionError
+
+
+"How have dictionaries, strings,
+file handling, and exception
+handling helped you understand programming better?"
+
+1.dictionaries helps me to understand how the data is stored
+2.strings helps me to understand that the data should be an also text with double quotes .
+3.file handling helps me to understand how we can access and manage datas from the file using the methods like append,read,write
+4.excception handling helps that how can handle errors user friendly by providing error messages 
+
