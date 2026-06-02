@@ -1,0 +1,39 @@
+OOP Day 7
+
+Class = Template
+
+Object = Real thing created from a class
+
+Example:
+
+class Dog:
+    pass
+
+Dog = Template
+
+dog1 = Dog()
+
+dog1 = Object
+
+Attribute
+
+ℹ️ Information about an object
+
+Example:
+
+ishu.name = "Ishu"
+
+Here:
+
+name
+
+is an attribute.
+
+One-Line Definitions
+Object
+
+A real thing created from a class.
+
+Attribute
+
+Information that describes an object.
