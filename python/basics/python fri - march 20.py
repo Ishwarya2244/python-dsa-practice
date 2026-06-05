@@ -1,7 +1,7 @@
-#String + logic
+String + logic
 
-#1.
-# remove all vowels from a string
+1.
+ remove all vowels from a string
 
 string="aishu"
 vowels='a','e','i','o','u'
@@ -14,9 +14,9 @@ for x in string:
 print(s)
         
 
-#2.
+2.
 
-#palindrome
+palindrome
 
 char="fales"
 reversed_string=char[::-1]
@@ -27,16 +27,16 @@ else:
      print(False)
 
 
-#string splitting + word logic
+string splitting + word logic
 
 
-# *.split()
+ *.split()
 
-# 1* first step= split(), 2* loop words  3* apply logic
+ 1* first step= split(), 2* loop words  3* apply logic
 
-#problem 1
+problem 1
 
-#count number of words
+count number of words
 
 word="I love python"
 s=word.split()
@@ -46,7 +46,7 @@ for x in s:
 print(count)
 
 
-#2. print each word in new line
+2. print each word in new line
 
 word1="I love python"
 new=word1.split()
