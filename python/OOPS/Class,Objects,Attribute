@@ -37,3 +37,44 @@ A real thing created from a class.
 Attribute
 
 Information that describes an object.
+
+
+Method:
+
+def study(self):
+
+⚙️ Function inside a class
+ex:
+class Student:
+
+    def study(self): #method "study"
+        print("Studying")
+
+OOP Day 7
+
+Class = Template
+
+Object = Real thing created from a class
+
+Attribute = Information about an object
+
+Value = Data stored in an attribute
+
+Method = Function inside a class
+
+Example:
+
+class Dog:
+
+    def bark(self):
+        print("Woof")
+
+dog1 = Dog()
+
+dog1.color = "Brown"
+
+Class = Dog
+Method = bark
+Object = dog1
+Attribute = color
+Value = Brown
