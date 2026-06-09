@@ -1,0 +1,217 @@
+==========================
+ OOP CONSTRUCTORS
+==========================
+
+1. What is a Constructor?
+
+A constructor is a special method that runs automatically when an object is created.
+
+In Python, the constructor is:
+
+__init__()
+
+Example:
+
+class Student:
+
+    def __init__(self, name):
+        self.name = name
+
+student1 = Student("Ishu")
+
+When student1 is created, __init__() runs automatically.
+
+----------------------------------
+
+2. Why do we use a Constructor?
+
+Without Constructor:
+
+student1 = Student()
+student1.name = "Ishu"
+
+With Constructor:
+
+student1 = Student("Ishu")
+
+The constructor allows us to give values while creating the object.
+
+----------------------------------
+
+3. Important OOP Terms
+
+Class:
+A blueprint/template for creating objects.
+
+Example:
+class Student:
+    pass
+
+Object:
+A real instance created from a class.
+
+Example:
+student1 = Student()
+
+Attribute:
+Information stored inside an object.
+
+Example:
+self.name
+
+Value:
+Actual data stored in an attribute.
+
+Example:
+"Ishu"
+
+Method:
+A function inside a class.
+
+Example:
+
+def show_name(self):
+    print(self.name)
+
+Parameter:
+A variable that receives a value.
+
+Example:
+
+def __init__(self, name):
+
+'name' is a parameter.
+
+----------------------------------
+
+4. Data Flow in Constructor
+
+Code:
+
+student1 = Student("Ishu")
+
+Step 1:
+Value received
+
+"Ishu"
+
+Step 2:
+Stored in parameter
+
+name = "Ishu"
+
+Step 3:
+Stored in attribute
+
+self.name = name
+
+Step 4:
+Object now contains
+
+name -> Ishu
+
+----------------------------------
+
+5. Example Program
+
+class Dog:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print(self.name)
+
+dog1 = Dog("Rocky")
+
+dog1.show_name()
+
+Output:
+
+Rocky
+
+----------------------------------
+
+6. Quick Revision
+
+Student = Class
+
+student1 = Object
+
+"Ishu" = Value
+
+name = Parameter
+
+self.name = Attribute
+
+show_name() = Method
+
+__init__() = Constructor
+
+student1.show_name() = Method Call
+
+----------------------------------
+
+7. Key Point
+
+Constructor (__init__) runs automatically when an object is created and is used to initialize attributes with values.
+
+
+class Book:
+    def __init__(self,title):
+        self.title=title
+    def show_title(self):
+            print(self.title)
+book1=Book("Python Basics")
+book1.show_title()
+
+
+##Final Coding Challenge
+##
+##Write a program for a Dog.
+##
+##Requirements:
+##
+##Class name: Dog
+##
+##Attribute: name
+##
+##Value: Rocky
+##
+##Method: show_name()
+##
+##Output:
+##Rocky
+##
+##Use __init__().
+
+
+
+class Dog:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+dog1=Dog("Rocky")
+dog1.show_name()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
