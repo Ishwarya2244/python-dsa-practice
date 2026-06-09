@@ -1,0 +1,42 @@
+SQL DAY 1
+
+What is SQL?
+SQL (Structured Query Language) is used to store, read, update and delete data from a database.
+
+Table:
+Data is stored in rows and columns.
+
+Example:
+
+id | name  | age
+1  | Ishu  | 21
+2  | Ram   | 22
+
+SELECT
+
+Used to display data.
+
+SELECT * FROM students;
+
+* means all columns.
+
+SELECT name FROM students;
+
+Displays only the name column.
+
+WHERE
+
+Used to filter rows based on a condition.
+
+SELECT * FROM students
+WHERE age = 21;
+
+Displays only rows where age is 21.
+
+Key Points:
+
+SELECT = Show data
+
+* = All columns
+
+WHERE = Filter data based on condition
