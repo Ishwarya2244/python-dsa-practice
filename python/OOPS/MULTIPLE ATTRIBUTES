@@ -1,0 +1,83 @@
+DAY 9 - MULTIPLE ATTRIBUTES
+
+A constructor can receive multiple values.
+
+Example:
+
+class Person:
+
+    def __init__(self, name, gender):
+        self.name = name
+        self.gender = gender
+
+    def show_details(self):
+        print(self.name)
+        print(self.gender)
+
+person1 = Person("Ishu", "Female")
+
+Output:
+
+Ishu
+Female
+
+Important:
+
+Class = Person
+
+Object = person1
+
+Parameters = name, gender
+
+Attributes = self.name, self.gender
+
+Values = Ishu, Female
+
+Method = show_details()
+
+Constructor = __init__()
+
+
+
+##python practice challenge :
+
+
+class Book:
+    def __init__(self,title,price):
+        self.title=title
+        self.price=price
+    def show_details(self):
+        print(self.title)
+        print(self.price)
+        
+
+book1 = Book("Python Basics", 500)
+book1.show_details()
+
+
+#2
+
+class Person:
+    def __init__(self,name,gender):
+        self.name=name
+        self.gender=gender
+    def show_details(self):
+        print(self.name)
+        print(self.gender)
+person1=Person("Ishu","Female")
+person1.show_details()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
