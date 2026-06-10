@@ -1,0 +1,53 @@
+DAY 2 - ORDER BY
+
+ORDER BY is used to sort data.
+
+Ascending Order (Small to Large)
+
+SELECT * FROM students
+ORDER BY age;
+
+Descending Order (Large to Small)
+
+SELECT * FROM students
+ORDER BY age DESC;
+
+Important:
+
+ORDER BY = Sort data
+
+DESC = Largest to smallest
+
+
+
+SQL Practice (First Query Writing)
+
+Look at this table:
+
+id	name	age
+1	Ishu	21
+2	Ram	25
+3	Priya	20
+
+Write the SQL query for:
+
+SQL Question 1
+
+Show only the name column.
+
+SQL Question 2
+
+Show all students whose age is 25.
+
+SQL Question 3
+
+Show all students sorted by age from largest to smallest.
+
+
+
+1.SELECT name FROM students;
+
+2.SELECT * FROM students WHERE age = 25;
+
+3. SELECT * FROM students ORDER BY age DESC;
+
