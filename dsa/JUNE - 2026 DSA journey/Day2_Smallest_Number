@@ -1,1 +1,40 @@
+DSA DAY 2
 
+Goal:
+Find the smallest number in a list.
+
+Logic:
+
+1. Assume first element is smallest.
+2. Compare each element.
+3. If a smaller number is found, update smallest.
+4. Print smallest.
+
+numbers = [15, 8, 25, 12]
+
+smallest = numbers[0]
+
+for x in numbers:
+    if x < smallest:
+        smallest = x
+
+print(smallest)
+
+#practiced::::::::
+
+#largest number 
+numbers = [15, 8, 25, 12]
+largest = numbers[0]
+for x in numbers:
+    if x > largest:
+        largest=x
+print(largest)
+
+#Write a Python program to find the smallest number
+
+numbers = [15, 8, 25, 12]
+smallest=numbers[0]
+for x in numbers:
+    if x < smallest:
+        smallest=x
+print(smallest)
