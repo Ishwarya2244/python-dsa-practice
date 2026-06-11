@@ -97,9 +97,30 @@ class Car:
 my_car=Car("Toyota")
 my_car.drive()
 
+Student
 
+has:
 
+Name = Ishu
+Age = 21
 
+These are attributes (information).
+
+What can the student do?
+
+Study
+Talk
+Write
+
+These are methods (actions).
+
+Examples:
+
+Dog
+
+Attribute → color = Brown
+
+Method → bark()
 
 
 
