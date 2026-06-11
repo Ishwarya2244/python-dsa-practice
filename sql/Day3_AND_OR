@@ -1,0 +1,103 @@
+SQL DAY 3 - AND & OR
+
+AND
+
+AND means both conditions must be true.
+
+Example:
+
+SELECT * FROM students
+WHERE age = 21 AND city = 'Chennai';
+
+Result:
+Ishu
+Priya
+
+Because:
+age = 21 ✅
+city = Chennai ✅
+
+--------------------------------
+
+OR
+
+OR means at least one condition must be true.
+
+Example:
+
+SELECT * FROM students
+WHERE age = 25 OR city = 'Chennai';
+
+Result:
+Ishu
+Ram
+Priya
+
+Because:
+age = 25 ✅ OR city = Chennai ✅
+
+--------------------------------
+
+Important:
+
+AND = Both conditions must be true
+
+OR = At least one condition must be true
+
+Memory Trick:
+
+AND = Strict
+OR = Flexible
+sql practice ::
+
+SQL Query 1
+
+Show students whose:
+
+age = 21
+AND
+city = 'Chennai'
+
+Think:
+
+Both conditions must be true.
+
+Start with:
+
+SELECT * FROM students
+WHERE ...
+
+
+1.SELECT * FROM students
+  WHERE age=21 AND city="Chennai";
+
+
+
+SQL Query 2
+
+Show students whose:
+
+age = 25
+OR
+city = 'Chennai'
+
+Think:
+
+At least one condition must be true.
+
+Start with:
+
+SELECT * FROM students
+WHERE ...
+
+
+
+2.SELECT * FROM students
+  WHERE age=25 OR city="Chennai";
+
+
+
+
+
+
+
