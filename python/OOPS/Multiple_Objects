@@ -1,0 +1,90 @@
+ MULTIPLE OBJECTS
+
+One class can create many objects.
+
+Example:
+
+class Animal:
+
+    def __init__(self, name):
+        self.name = name
+
+    def show_name(self):
+        print(self.name)
+
+animal1 = Animal("Dog")
+animal2 = Animal("Cat")
+
+animal1.show_name()
+animal2.show_name()
+
+Output:
+
+Dog
+Cat
+
+Important:
+
+Class = Animal
+
+Objects = animal1, animal2
+
+Different objects can store different values.
+
+Python Coding Challenge
+
+Write a class:
+
+Animal
+
+Constructor:
+
+name
+
+Method:
+
+show_name()
+
+Create two objects:
+
+animal1 = Animal("Dog")
+animal2 = Animal("Cat")
+
+Call:
+
+animal1.show_name()
+animal2.show_name()
+
+Expected Output:
+
+Dog
+Cat
+
+
+class Animal:
+    def __init__(self,name):
+        self.name=name
+    def show_name(self):
+        print(self.name)
+
+animal1 = Animal("Dog")
+animal2 = Animal("Cat")
+
+animal1.show_name()
+animal2.show_name()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
