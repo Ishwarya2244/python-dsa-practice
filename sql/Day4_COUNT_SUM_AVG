@@ -1,1 +1,75 @@
 
+SQL DAY 4 - COUNT(), SUM(), AVG()
+
+COUNT()
+
+Used to count rows.
+
+Example:
+
+SELECT COUNT(*) FROM students;
+
+--------------------------------
+
+SUM()
+
+Used to add values in a column.
+
+Example:
+
+SELECT SUM(marks) FROM students;
+
+--------------------------------
+
+AVG()
+
+Used to find average value.
+
+Example:
+
+SELECT AVG(marks) FROM students;
+
+--------------------------------
+
+Memory Trick
+
+COUNT() = Count rows
+
+SUM() = Add values
+
+AVG() = Average value
+
+practice::::::;
+
+Write the SQL query:
+
+Find the total marks from column:
+
+marks
+
+Table:
+
+students
+
+Start with:
+
+SELECT ...
+
+
+SELECT SUM(marks) FROM students;
+
+
+COUNT() → Count rows
+
+SUM() → Add values
+
+ORDER BY → Sort data
+
+AND → Both conditions
+
+OR → At least one conditionb
+
+
+Write the SQL query to find the average marks from the marks column in the students table.
+
+SELECT AVG(marks) FROM students;
