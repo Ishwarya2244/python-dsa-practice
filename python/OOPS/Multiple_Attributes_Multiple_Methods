@@ -1,0 +1,42 @@
+PYTHON DAY 13 - MULTIPLE ATTRIBUTES & MULTIPLE METHODS
+
+A class can have multiple attributes and multiple methods.
+
+Example:
+
+class Employee:
+
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def show_details(self):
+        print(self.name)
+        print(self.salary)
+
+    def work(self):
+        print(self.name, "is working")
+
+employee1 = Employee("Ishu", 25000)
+
+employee1.show_details()
+employee1.work()
+
+Output:
+
+Ishu
+25000
+Ishu is working
+
+Important:
+
+Attributes:
+name
+salary
+
+Methods:
+show_details()
+work()
+
+Object:
+employee1
