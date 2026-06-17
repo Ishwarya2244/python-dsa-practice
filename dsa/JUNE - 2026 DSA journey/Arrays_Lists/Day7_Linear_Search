@@ -1,0 +1,35 @@
+DSA DAY 7 - LINEAR SEARCH
+
+Goal:
+Find a target element in a list.
+
+Example:
+
+numbers = [5, 10, 15, 20]
+
+target = 20
+
+for x in numbers:
+    if x == target:
+        print("Found")
+
+Output:
+
+Found
+
+Important:
+
+== means equal to.
+
+Linear Search checks elements one by one.
+
+Example:
+
+5  -> No
+10 -> No
+15 -> No
+20 -> Found
+
+Memory Trick:
+
+Linear Search = Check one by one.
