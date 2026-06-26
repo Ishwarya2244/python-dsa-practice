@@ -1,0 +1,58 @@
+# DSA Day 10 - Even & Odd Numbers
+
+## 📘 Problem
+
+Given an array of numbers, print whether each number is even or odd.
+
+## 🔹 Logic
+
+A number is:
+- Even if `number % 2 == 0`
+- Odd if `number % 2 != 0`
+
+## 🔹 Algorithm
+
+1. Traverse the array.
+2. Check each element using `% 2`.
+3. Print whether it is even or odd.
+
+## 🔹 Code
+
+```python
+numbers = [5, 8, 11, 20]
+
+for x in numbers:
+    if x % 2 == 0:
+        print(x, "is Even")
+    else:
+        print(x, "is Odd")
+```
+
+## 🔹 Time Complexity
+
+**O(n)**
+
+Reason: Every element is visited exactly once.
+
+## 🎤 Interview Questions
+
+### Why do we use `%` instead of `/`?
+
+The modulus operator returns the remainder. If the remainder is `0`, the number is even; otherwise, it is odd.
+
+### How do you print only odd numbers?
+
+```python
+if x % 2 != 0:
+```
+
+## 📝 Key Points
+
+- `%` gives the remainder.
+- Even numbers have remainder `0` when divided by `2`.
+- Odd numbers have remainder `1` when divided by `2`.
+- Time Complexity: **O(n)**
+
+## ✅ Status
+
+Completed
