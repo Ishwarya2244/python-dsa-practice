@@ -1,0 +1,112 @@
+# SQL Day 11 - GROUP BY
+
+## 📘 Definition
+
+`GROUP BY` is used to group rows that have the same values in a specified column. It is commonly used with aggregate functions.
+
+---
+
+## 🔹 Syntax
+
+```sql
+SELECT column_name, aggregate_function(column_name)
+FROM table_name
+GROUP BY column_name;
+```
+
+---
+
+## 🔹 Aggregate Functions Used
+
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+
+---
+
+## 🔹 Example Table
+
+| Name | Department | Salary |
+|------|------------|-------:|
+| Ravi | AI | 30000 |
+| Priya | AI | 35000 |
+| Arun | CSE | 40000 |
+| Meena | CSE | 45000 |
+| Kiran | ECE | 38000 |
+
+---
+
+## 🔹 Example Queries
+
+### Count employees in each department
+
+```sql
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department;
+```
+
+### Average salary of each department
+
+```sql
+SELECT department, AVG(salary)
+FROM employees
+GROUP BY department;
+```
+
+### Highest salary in each department
+
+```sql
+SELECT department, MAX(salary)
+FROM employees
+GROUP BY department;
+```
+
+---
+
+## 🎯 Interview Questions
+
+### 1. What is GROUP BY?
+
+GROUP BY is used to group rows with the same values so that aggregate functions can be applied to each group.
+
+### 2. Which aggregate functions are commonly used with GROUP BY?
+
+- COUNT()
+- SUM()
+- AVG()
+- MIN()
+- MAX()
+
+### 3. What is the difference between DISTINCT and GROUP BY?
+
+**DISTINCT**
+- Returns unique values.
+- Removes duplicate values.
+
+**GROUP BY**
+- Groups rows with the same values.
+- Commonly used with aggregate functions.
+
+---
+
+## 📝 Key Points
+
+- GROUP BY groups similar rows.
+- Usually used with aggregate functions.
+- Frequently asked in SQL interviews.
+- Helps summarize data.
+
+---
+
+## ✅ Time Complexity
+
+GROUP BY typically takes **O(n)** to scan rows, though the actual performance depends on the database engine, indexes, and implementation.
+
+---
+
+## 🎓 Status
+
+✅ SQL Day 11 Completed
