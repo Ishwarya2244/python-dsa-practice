@@ -1,0 +1,24 @@
+-- SQL Day 12 - HAVING
+
+-- Count employees in each department
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department;
+
+-- Departments having more than 1 employee
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 1;
+
+-- Average salary greater than 35000
+SELECT department, AVG(salary)
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 35000;
+
+-- Maximum salary greater than 38000
+SELECT department, MAX(salary)
+FROM employees
+GROUP BY department
+HAVING MAX(salary) > 38000;
