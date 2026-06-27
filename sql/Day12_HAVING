@@ -22,3 +22,82 @@ SELECT department, MAX(salary)
 FROM employees
 GROUP BY department
 HAVING MAX(salary) > 38000;
+
+# SQL Day 12 - HAVING
+
+## 📘 Definition
+
+HAVING is used to filter groups after they are created using GROUP BY.
+
+---
+
+## 🔹 Syntax
+
+```sql
+SELECT column_name, AGGREGATE_FUNCTION(column_name)
+FROM table_name
+GROUP BY column_name
+HAVING AGGREGATE_FUNCTION(column_name) condition;
+```
+
+---
+
+## 🔹 Difference Between WHERE and HAVING
+
+| WHERE | HAVING |
+|--------|---------|
+| Filters rows | Filters groups |
+| Executes before GROUP BY | Executes after GROUP BY |
+| Cannot use aggregate functions | Can use aggregate functions |
+
+---
+
+## 🔹 Examples
+
+### Departments with more than one employee
+
+```sql
+SELECT department, COUNT(*)
+FROM employees
+GROUP BY department
+HAVING COUNT(*) > 1;
+```
+
+### Departments with average salary greater than 35000
+
+```sql
+SELECT department, AVG(salary)
+FROM employees
+GROUP BY department
+HAVING AVG(salary) > 35000;
+```
+
+---
+
+## 🎤 Interview Questions
+
+### What is HAVING?
+
+HAVING filters grouped data after GROUP BY.
+
+### Why can't WHERE use COUNT() or AVG()?
+
+Because WHERE executes before GROUP BY, while aggregate functions are calculated after grouping.
+
+### Difference between WHERE and HAVING?
+
+WHERE filters rows, while HAVING filters groups.
+
+---
+
+## 📝 Key Points
+
+- HAVING is usually used with GROUP BY.
+- HAVING can use aggregate functions like COUNT(), AVG(), SUM(), MIN(), and MAX().
+- WHERE cannot use aggregate functions directly.
+
+---
+
+## ✅ Status
+
+Completed
