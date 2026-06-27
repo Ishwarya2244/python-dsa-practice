@@ -1,0 +1,112 @@
+# DSA Day 11 - Count Even and Odd Numbers
+
+numbers = [12, 7, 18, 25, 30, 9]
+
+even_count = 0
+odd_count = 0
+
+for x in numbers:
+    if x % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+print("Even:", even_count)
+print("Odd:", odd_count)
+
+# DSA Day 11 - Count Even and Odd Numbers
+
+## 📘 Problem
+
+Given an array of numbers, count how many numbers are even and how many are odd.
+
+---
+
+## 🔹 Algorithm
+
+1. Initialize `even_count = 0` and `odd_count = 0`.
+2. Traverse the array.
+3. If the current number is even, increment `even_count`.
+4. Otherwise, increment `odd_count`.
+5. Print both counts.
+
+---
+
+## 🔹 Code
+
+```python
+numbers = [12, 7, 18, 25, 30, 9]
+
+even_count = 0
+odd_count = 0
+
+for x in numbers:
+    if x % 2 == 0:
+        even_count += 1
+    else:
+        odd_count += 1
+
+print("Even:", even_count)
+print("Odd:", odd_count)
+```
+
+---
+
+## 🔹 Output
+
+```
+Even: 3
+Odd: 3
+```
+
+---
+
+## ⏱️ Time Complexity
+
+**O(n)**
+
+### Why?
+
+The algorithm visits every element in the list exactly once.  
+If there are `n` elements, it performs `n` iterations.
+
+---
+
+## 💾 Space Complexity
+
+**O(1)**
+
+### Why?
+
+Only two extra variables (`even_count` and `odd_count`) are used, regardless of the size of the input.
+
+---
+
+## 🎤 Interview Questions
+
+### 1. Why do we use `% 2`?
+
+To check whether a number is even or odd.
+
+### 2. Why is the time complexity O(n)?
+
+Because every element is visited exactly once.
+
+### 3. What is the space complexity?
+
+O(1), because only a constant amount of extra memory is used.
+
+---
+
+## 📝 Key Points
+
+- `% 2 == 0` → Even
+- `% 2 != 0` → Odd
+- One loop → O(n)
+- Two counters → O(1) extra space
+
+---
+
+## ✅ Status
+
+Completed
