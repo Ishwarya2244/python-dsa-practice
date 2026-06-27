@@ -1,0 +1,105 @@
+# Python Day 17 - Method Overriding
+
+## 📘 Definition
+
+Method Overriding occurs when a child class provides its own implementation of a method that already exists in the parent class.
+
+---
+
+## 🔹 Why do we use Method Overriding?
+
+- To change the behavior of an inherited method.
+- To provide a specific implementation in the child class.
+- To achieve runtime polymorphism.
+
+---
+
+## 🔹 Syntax
+
+```python
+class Parent:
+    def method(self):
+        print("Parent Method")
+
+class Child(Parent):
+    def method(self):
+        print("Child Method")
+```
+
+---
+
+## 🔹 Example
+
+```python
+class Bird:
+    def fly(self):
+        print("Bird is flying")
+
+class Eagle(Bird):
+    def fly(self):
+        print("Eagle flies very high")
+
+eagle1 = Eagle()
+
+eagle1.fly()
+```
+
+---
+
+## 🔹 Output
+
+```
+Eagle flies very high
+```
+
+---
+
+## 🎤 Interview Questions
+
+### 1. What is Method Overriding?
+
+Method Overriding is the process in which a child class provides its own implementation of a method that is already defined in the parent class.
+
+---
+
+### 2. Can Method Overriding happen without Inheritance?
+
+**No.**
+
+Method Overriding always requires inheritance.
+
+---
+
+### 3. Difference between Inheritance and Method Overriding
+
+| Inheritance | Method Overriding |
+|--------------|------------------|
+| Child class inherits methods and attributes from parent class. | Child class changes the inherited method. |
+| Used for code reusability. | Used to provide a different implementation. |
+
+---
+
+## 📝 Key Points
+
+- Parent class method and child class method must have the same name.
+- The child class method replaces the parent class method.
+- Method Overriding requires inheritance.
+- Used to customize the behavior of inherited methods.
+
+---
+
+## 🎯 Real-Life Example
+
+Animal → sound()
+
+Dog → sound() = "Dog barks"
+
+Cat → sound() = "Cat meows"
+
+All inherit `sound()` but implement it differently.
+
+---
+
+## 📌 Status
+
+✅ Completed
