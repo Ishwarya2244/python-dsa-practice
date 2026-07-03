@@ -1,0 +1,16 @@
+numbers = [32, 18, 45, 12, 27]
+
+large = numbers[0]
+small = numbers[0]
+
+for x in numbers:
+    if x > large:
+        large = x
+    if x < small:
+        small = x
+
+print("Largest number:", large)
+print("Smallest number:", small)
+
+Time Complexity: O(n)
+Space Complexity: O(1)
