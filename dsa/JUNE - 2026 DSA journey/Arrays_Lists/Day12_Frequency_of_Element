@@ -1,0 +1,85 @@
+# Frequency of an Element in an Array
+
+## Problem
+
+Count how many times a target element appears in an array.
+
+### Example
+
+Input:
+
+```python
+numbers = [12, 5, 8, 12, 20, 12, 7]
+target = 12
+```
+
+Output:
+
+```
+12 appears 3 times
+```
+
+---
+
+## Algorithm
+
+1. Initialize `count = 0`.
+2. Traverse the array using one loop.
+3. Compare each element with the target.
+4. If equal, increment `count`.
+5. Print the final count.
+
+---
+
+## Python Code
+
+```python
+numbers = [12, 5, 8, 12, 20, 12, 7]
+
+count = 0
+target = 12
+
+for x in numbers:
+    if x == target:
+        count += 1
+
+print(f"{target} appears {count} times")
+```
+
+---
+
+## Time Complexity
+
+**O(n)**
+
+Reason: The array is traversed once.
+
+---
+
+## Space Complexity
+
+**O(1)**
+
+Reason: Only a fixed number of extra variables are used.
+
+---
+
+## Interview Questions
+
+### What is the purpose of `count`?
+
+It stores the number of times the target element appears.
+
+### What happens if the target is not present?
+
+The program prints `0` because `count` never increases.
+
+### Can this problem be solved using one loop?
+
+Yes. One traversal is sufficient.
+
+---
+
+## Status
+
+✅ Completed
