@@ -1,0 +1,107 @@
+# Polymorphism in Python
+
+## Definition
+
+Polymorphism means **"one method, many forms."**
+
+It allows the same method name to perform different actions in different classes.
+
+---
+
+## Real-Life Example
+
+Command: **Speak**
+
+- Teacher → Explains lessons
+- Police → Gives instructions
+- Baby → Cries
+
+The command is the same, but the behavior is different.
+
+This is polymorphism.
+
+---
+
+## Example
+
+```python
+class Vehicle:
+    def move(self):
+        print("Vehicle is moving")
+
+class Car(Vehicle):
+    def move(self):
+        print("Car is moving on the road")
+
+class Boat(Vehicle):
+    def move(self):
+        print("Boat is moving on the water")
+
+car = Car()
+boat = Boat()
+
+car.move()
+boat.move()
+```
+
+### Output
+
+```
+Car is moving on the road
+Boat is moving on the water
+```
+
+---
+
+## Advantages
+
+- Code is flexible.
+- Code is reusable.
+- Easy to extend programs.
+- Supports object-oriented programming.
+
+---
+
+## Interview Questions
+
+### What is polymorphism?
+
+Polymorphism means one method can have different behaviors in different classes.
+
+---
+
+### What is the relationship between polymorphism and method overriding?
+
+Method overriding is one way to achieve polymorphism. A child class provides its own implementation of a parent class method.
+
+---
+
+## Difference
+
+| Inheritance | Method Overriding | Polymorphism |
+|-------------|-------------------|--------------|
+| Child inherits from parent | Child changes the parent's method | Same method behaves differently in different classes |
+
+---
+
+## Key Points
+
+- Poly = Many
+- Morph = Forms
+- Same method name
+- Different behavior
+- Achieved using method overriding
+
+---
+
+
+Easy Memory Trick
+
+Inheritance → Child gets properties from Parent.
+Method Overriding → Child changes the parent's method.
+Polymorphism → Same method name, different behavior.
+
+
+## Status
+
+✅ Completed
