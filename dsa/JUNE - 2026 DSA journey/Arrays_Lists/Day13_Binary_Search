@@ -1,0 +1,108 @@
+Binary Search in a Sorted Array
+Problem
+
+Search for a target element in a sorted array using the Binary Search algorithm.
+
+Example
+
+Input:
+
+numbers = [5, 10, 15, 20, 25, 30, 35]
+target = 25
+
+Output:
+
+Element found at index 4
+Algorithm
+Initialize:
+left = 0
+right = len(numbers) - 1
+Repeat while left <= right.
+
+Calculate the middle index:
+
+mid = (left + right) // 2
+If numbers[mid] == target, print the index and stop.
+
+If target > numbers[mid], search the right half:
+
+left = mid + 1
+
+Otherwise, search the left half:
+
+right = mid - 1
+If the loop ends, print "Element not found".
+Python Code
+numbers = [5, 10, 15, 20, 25, 30, 35]
+
+target = 25
+
+left = 0
+right = len(numbers) - 1
+
+while left <= right:
+    mid = (left + right) // 2
+
+    if numbers[mid] == target:
+        print("Element found at index", mid)
+        break
+
+    elif target > numbers[mid]:
+        left = mid + 1
+
+    else:
+        right = mid - 1
+else:
+    print("Element not found")
+Time Complexity
+
+Best Case: O(1)
+
+Reason: The target is found at the first middle element.
+
+Average Case: O(log n)
+
+Reason: Half of the search space is eliminated in every iteration.
+
+Worst Case: O(log n)
+
+Reason: The search continues until only one element remains.
+
+Space Complexity
+
+O(1)
+
+Reason: Only a fixed number of extra variables (left, right, and mid) are used.
+
+Interview Questions
+1. What is Binary Search?
+
+Binary Search is a searching algorithm that finds an element in a sorted array by repeatedly dividing the search space into two halves.
+
+2. Why should the array be sorted?
+
+Because Binary Search decides whether to move left or right based on the middle element. This decision is only correct if the array is sorted.
+
+3. Why is Binary Search faster than Linear Search?
+
+Binary Search eliminates half of the remaining search space after each comparison, while Linear Search checks one element at a time.
+
+4. Why do we use left = mid + 1?
+
+Because the target is greater than the middle element, so the search continues in the right half.
+
+5. Why do we use right = mid - 1?
+
+Because the target is smaller than the middle element, so the search continues in the left half.
+
+6. What is the Time Complexity of Binary Search?
+Best Case → O(1)
+Average Case → O(log n)
+Worst Case → O(log n)
+7. What is the Space Complexity of Binary Search?
+
+O(1) because only a constant amount of extra memory is used.
+
+Status
+
+✅ Completed
