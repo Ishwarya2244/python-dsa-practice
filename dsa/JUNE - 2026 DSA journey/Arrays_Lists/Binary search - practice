@@ -1,5 +1,35 @@
 
 
+#why binary search is faster than the linear search ?
+
+Binary Search is faster than Linear Search because 
+it works on sorted arrays and eliminates half of the remaining search space 
+after each comparison, resulting in O(log n) time complexity.
+
+
+# why is binary search O(log n)?
+
+Binary Search has O(log n) time complexity because it eliminates half of the remaining search space in every iteration.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # ----------------------------------------------------------
 # Program 1: Binary Search - Element Found
 # ----------------------------------------------------------
