@@ -9,23 +9,7 @@ after each comparison, resulting in O(log n) time complexity.
 
 # why is binary search O(log n)?
 
-Binary Search has O(log n) time complexity because it eliminates half of the remaining search space in every iteration.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Binary Search has O(log n) time complexity because it eliminates half of the remaining search space in every iteration
 
 
 
