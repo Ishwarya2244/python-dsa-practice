@@ -1,0 +1,139 @@
+# Selection Sort
+
+## Definition
+
+Selection Sort is a sorting algorithm that repeatedly finds the smallest element from the unsorted part of an array and places it at the correct position.
+
+---
+
+## How It Works
+
+1. Start from the first element.
+2. Find the smallest element in the remaining unsorted array.
+3. Swap the smallest element with the current element.
+4. Move to the next position.
+5. Repeat until the array is sorted.
+
+---
+
+## Example
+
+Input:
+
+```python
+numbers = [18, 9, 27, 5]
+```
+
+### Pass 1
+
+Smallest = 5
+
+After swapping:
+
+```
+5 18 27 9
+```
+
+### Pass 2
+
+Remaining:
+
+```
+18 27 9
+```
+
+Smallest = 9
+
+After swapping:
+
+```
+5 9 27 18
+```
+
+### Pass 3
+
+Remaining:
+
+```
+27 18
+```
+
+Smallest = 18
+
+After swapping:
+
+```
+5 9 18 27
+```
+
+### Final Output
+
+```
+5 9 18 27
+```
+
+---
+
+## Important Points
+
+- Selection Sort searches for the smallest element in every pass.
+- The outer loop decides the current position.
+- The inner loop finds the smallest element.
+- Swapping happens only after the smallest element is found.
+- It works on arrays/lists.
+
+---
+
+## Time Complexity
+
+**O(n²)**
+
+### Why?
+
+The algorithm uses two nested loops.
+
+For an array of n elements, the comparisons are approximately:
+
+```
+(n-1) + (n-2) + (n-3) + ... + 1
+```
+
+This results in **O(n²)** time complexity.
+
+---
+
+## Space Complexity
+
+**O(1)**
+
+Reason: Only a few extra variables are used.
+
+---
+
+## Interview Questions
+
+### Why is Selection Sort O(n²)?
+
+Because it uses two nested loops to find the smallest element during each pass.
+
+### Which performs fewer swaps?
+
+Selection Sort.
+
+### Does Selection Sort require a sorted array?
+
+No.
+
+### Is Selection Sort a searching algorithm?
+
+No.
+
+It is a sorting algorithm.
+
+---
+
+## Status
+
+🟡 Concept Completed
+
+⏳ Code Implementation - In Progress
