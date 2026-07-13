@@ -1,1 +1,117 @@
 
+📂 Selection Sort in Python
+Problem
+
+Sort an array in ascending order using the Selection Sort algorithm.
+
+Example
+
+Input:
+
+numbers = [18, 9, 27, 5]
+
+Output:
+
+[5, 9, 18, 27]
+Algorithm
+Assume the current element is the smallest.
+Store its index in smallest_index.
+Traverse the remaining unsorted part of the array.
+Find the actual smallest element.
+Swap it with the current position.
+Repeat until the array is sorted.
+Python Code
+numbers = [18, 9, 27, 5]
+
+for i in range(len(numbers)):
+    smallest_index = i
+
+    for j in range(i + 1, len(numbers)):
+        if numbers[j] < numbers[smallest_index]:
+            smallest_index = j
+
+    numbers[i], numbers[smallest_index] = numbers[smallest_index], numbers[i]
+
+print(numbers)
+Dry Run
+
+Initial Array:
+
+[18, 9, 27, 5]
+Pass 1
+
+Smallest element = 5
+
+Swap with 18
+
+[5, 9, 27, 18]
+Pass 2
+
+Smallest element = 9
+
+Already in correct position
+
+[5, 9, 27, 18]
+Pass 3
+
+Smallest element = 18
+
+Swap with 27
+
+[5, 9, 18, 27]
+
+Array Sorted ✅
+
+Time Complexity
+
+O(n²)
+
+Reason:
+
+Outer loop runs n times.
+Inner loop searches the remaining unsorted elements.
+Nested loops result in O(n²).
+Space Complexity
+
+O(1)
+
+Reason:
+
+Only a few extra variables (i, j, smallest_index) are used.
+
+Interview Questions
+Why is it called Selection Sort?
+
+Because in every pass, it selects the smallest element from the unsorted part of the array.
+
+Why do we use smallest_index instead of smallest?
+
+We need the index to swap elements.
+
+Why does the inner loop start from i + 1?
+
+Because the current element is already assumed to be the smallest, so comparing it with itself is unnecessary.
+
+Is Selection Sort stable?
+
+❌ No.
+
+Is Selection Sort an in-place algorithm?
+
+✅ Yes.
+
+Best Time Complexity
+
+O(n²)
+
+Average Time Complexity
+
+O(n²)
+
+Worst Time Complexity
+
+O(n²)
+
+Status
+
+✅ Completed
