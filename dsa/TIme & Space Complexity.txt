@@ -6,7 +6,7 @@ Time Complexity tells us how the running time of an algorithm grows as the input
 
 It is represented using **Big O Notation**.
 
----
+----
 
 ## 📘 What is Space Complexity?
 
@@ -14,7 +14,7 @@ Space Complexity tells us how much **extra memory** an algorithm uses as the inp
 
 It also uses **Big O Notation**.
 
----
+----
 
 # Common Time Complexities
 
@@ -30,7 +30,7 @@ print("Hello")
 
 **Time Complexity:** O(1)
 
----
+----
 
 ## 2. O(n) - Linear Time
 
@@ -45,7 +45,7 @@ for x in numbers:
 
 **Time Complexity:** O(n)
 
----
+----
 
 ## 3. O(n²) - Quadratic Time
 
@@ -61,7 +61,7 @@ for i in range(n):
 
 **Time Complexity:** O(n²)
 
----
+----
 
 # Common Space Complexities
 
@@ -85,7 +85,7 @@ Extra variables:
 
 **Space Complexity:** O(1)
 
----
+----
 
 ## O(n)
 
@@ -104,7 +104,7 @@ The new list grows as the input grows.
 
 **Space Complexity:** O(n)
 
----
+----
 
 # Quick Revision Table
 
@@ -127,7 +127,7 @@ The new list grows as the input grows.
 
 ✅ Creating a new list → Space O(n)
 
----
+----
 
 # Interview Questions
 
@@ -135,13 +135,13 @@ The new list grows as the input grows.
 
 Time Complexity measures how the running time of an algorithm grows as the input size increases.
 
----
+----
 
 ### 2. What is Space Complexity?
 
 Space Complexity measures how much extra memory an algorithm uses.
 
----
+----
 
 ### 3. Why is one loop O(n)?
 
