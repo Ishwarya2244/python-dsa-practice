@@ -1,1 +1,65 @@
+#1.Count the vowels in:
+
+s = "PYTHON"
+count=0
+a='A','E','I','O','U'
+for i in s:
+  if i in a:
+    count=count+1
+print(count)
+
+#2.Count the consonants in:
+
+s = "PYTHON"
+count=0
+a='A','E','I','O','U'
+for i in s:
+  if i not in  a:
+    count=count+1
+print(count)
+
+#3.Count how many times S appears.
+
+s = "MISSISSIPPI"
+count =0
+for i in s:
+  if i == 'S':
+    count = count + 1
+print(count)
+
+#4.Print the string in reverse.
+
+s = "PYTHON"
+reverse =""
+for i in s:
+  reverse=i+reverse
+print(reverse)
+
+#5.Next string pattern: count digits
+
+s = "PYTHON123"
+count=0
+for i in s:
+  if i.isdigit():
+    count=count+1
+print(count)
+
+#6.Count how many alphabet characters are in the string.
+
+s = "Hello123"
+count=0
+for i in s:
+  if i.isalpha():
+    count=count+1
+print(count)
+
+
+
+
+
+
+
+
+
+
 
