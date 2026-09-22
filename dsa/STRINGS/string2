@@ -1,1 +1,35 @@
+#!. remove spaces from a string 
+
+s = "I love Python"
+result =""
+for i in s:
+  if i == " ":
+    continue
+  else:
+    result=result+i
+print(result)
+
+#2.keep the first character lowercase and make the remaining characters uppercase.
+
+s="hello"
+print(s[0].lower() + s[1:].upper())
+
+#3.Write a program to check whether it is palindrome or not 
+
+s="madam"
+result = ""
+ori=s
+for i in s:
+ result = i+result
+if ori == result:
+   print("palindrome")
+else:
+    print("NOt a palindrome")
+
+
+
+
+
+
+
 
