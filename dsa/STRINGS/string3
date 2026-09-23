@@ -1,0 +1,17 @@
+1.Write a program to count the number of words in:
+
+
+s = "I love Python"
+arr = s.split()
+print(len(arr))
+
+#2.Count the frequency of each character.
+
+s= "hello"
+freq ={}
+for i in s:
+  if i in freq:
+    freq[i]= freq[i]+1
+  else:
+    freq[i]=1
+print(freq)
