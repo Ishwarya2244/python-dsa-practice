@@ -1,0 +1,44 @@
+#1.First non-repeating 
+
+s = "swiss"
+freq={}
+for i in s:
+  if i in freq:
+    freq[i]=freq[i]+1
+  else:
+    freq[i]=1
+for i in freq:
+  if freq[i]==1:
+    print(i)
+    break
+
+#2.Remove Duplicate Characters
+
+s = "programming"
+word=""
+for i in s:
+    if i not in word:
+      word = word+i
+print(word)
+
+
+#3.Check whether these are anagrams:
+
+s1 = "listen"
+s2 = "silent"
+freq1={}
+freq2={}
+for i in s1:
+  if i in freq1:
+    freq1[i]=freq1[i]+1
+  else:
+    freq1[i]=1
+for i in s2:
+  if i in freq2:
+    freq2[i]=freq2[i]+1
+  else:
+    freq2[i]=1
+if freq1==freq2:
+    print("Anagram")
+else:
+    print("Not an Anagram")
