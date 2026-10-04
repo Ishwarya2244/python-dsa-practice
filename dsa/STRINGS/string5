@@ -1,1 +1,75 @@
+#1. Unique Characters
 
+s = "hello"
+freq={}
+for i in s:
+  if i in freq:
+    freq[i]=freq[i]+1
+  else:
+    freq[i]=1
+for i in freq:
+  if freq[i] > 1:
+    print("Not Unique")
+    break
+else:
+  print("unique")
+
+#2. find the longest word
+
+s = "I love programming"
+words = s.split()
+longest = words[0]
+for i in words:
+  if len(i)>len(longest):
+    longest = i
+print(longest)
+
+
+#3.reverse a string
+
+s = "hello"
+rev = ""
+for i in s:
+  rev = i + rev
+print(rev)
+
+
+REVISION 
+
+#4.Find how many times the character a appears.
+
+s = "banana"
+freq={}
+for i in s:
+  if i in freq:
+    freq[i]=freq[i]+1
+  else:
+    freq[i]=1
+for i in freq:
+  if i == 'a':
+    print(freq[i])
+
+#5.Print the first character that appears only once.
+
+s = "programming"
+freq={}
+for i in s:
+  if i in freq:
+    freq[i]=freq[i]+1
+  else:
+    freq[i]=1
+for i in freq:
+  if freq[i]==1:
+    print(i)
+    break
+
+
+#6.find the longest word 
+
+s = "hello world from python"
+word=s.split()
+longest = word[0]
+for i in word:
+  if len(i) > len(longest):
+    longest = i
+print(longest)
