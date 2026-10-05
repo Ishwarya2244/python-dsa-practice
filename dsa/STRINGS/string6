@@ -1,1 +1,19 @@
+#1. remove duplicates 
 
+s = "mississippi"
+word=""
+for i in s:
+  if i not in word:
+    word=word+i
+print(word)
+
+#2.check whether the string is palindrome or not
+
+s = "racecar"
+rev = ""
+for i in s:
+    rev=i+rev
+if s == rev:
+      print("palindrome")
+else:
+    print("not a palindrome")
