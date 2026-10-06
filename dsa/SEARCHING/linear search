@@ -1,0 +1,22 @@
+#1.Write a program that searches pafor 30 in:
+
+
+arr = [10, 20, 30, 40, 50]
+target = 30
+for i in arr:
+  if i == target:
+    print("Found")
+    break
+else:
+    print("not found")
+
+#2.Print index of the target
+
+arr = [10, 20, 30, 40, 50]
+target = 30
+for index,value in enumerate(arr):
+  if value == target:
+    print("Found at index ",index)
+    break
+else:
+    print("not found")
