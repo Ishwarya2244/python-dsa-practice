@@ -1,1 +1,52 @@
+#1. binary search problem 
 
+arr = [10, 20, 30, 40, 50, 60, 70]
+target = 70
+low = 0 
+high = len(arr)-1
+while(low <= high):
+  mid = (low + high) // 2
+  if target == arr[mid]:
+    print("found at index",mid)
+    break
+  elif target > arr[mid]:
+    low=mid+1
+  else:
+    high = mid-1
+
+
+#2.not found
+
+arr = [10, 20, 30, 40, 50, 60, 70]
+target = 35
+low = 0 
+high = len(arr)-1
+while(low <= high):
+  mid = (low + high) // 2
+  if target == arr[mid]:
+    print("found at index",mid)
+    break
+  elif target > arr[mid]:
+    low=mid+1
+  else:
+    high = mid-1
+else:
+  print("not found")
+
+#3.Find 25 in this sorted array
+
+arr = [5, 10, 15, 20, 25, 30, 35]
+target = 25
+low =0
+high = len(arr)-1
+while(low <= high):
+  mid = (low+high)//2
+  if target == arr[mid]:
+    print("found at index",mid)
+    break
+  elif target < arr[mid]:
+    high = mid -1
+  else:
+    low = mid +1
+else:
+  print("not found")
