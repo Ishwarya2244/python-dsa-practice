@@ -1,0 +1,52 @@
+Sorting means arranging elements in a particular order.
+
+### Bubble Sort
+
+Bubble Sort sorts an array by **comparing two adjacent elements** and **swapping them if the left element is bigger than the right element**.
+
+We repeat this for multiple passes.
+
+After each pass, the **largest unsorted element moves to the end**.
+
+### Code idea
+
+* `i` → number of passes
+* `j` → position used to compare elements
+* `arr[j]` → current element
+* `arr[j+1]` → next element
+* `arr[j] > arr[j+1]` → check if they are in the wrong order
+* Swap them if the condition is true
+* `len(arr)-1-i` → no need to compare the elements already sorted at the end
+
+### Easy way to remember
+
+**Compare → Swap → Repeat**
+
+Example:
+
+`[30, 10, 20]`
+
+→ compare `30` and `10` → swap
+→ compare `30` and `20` → swap
+→ result: `[10, 20, 30]`
+
+
+Practice sums:::::::::
+
+#1. bubble sort 
+
+arr = [40, 10, 30, 20]
+for i in range(len(arr)-1):
+  for j in range(len(arr)-1-i):
+    if arr[j]>arr[j+1]:
+      arr[j],arr[j+1]=arr[j+1],arr[j]
+print(arr)
+
+#2.sort it 
+
+arr = [30, 10, 40, 20]
+for i in range(len(arr)-1):
+  for j in range(len(arr)-1-i):
+    if arr[j]>arr[j+1]:
+      arr[j],arr[j+1]=arr[j+1],arr[j]
+print(arr)
