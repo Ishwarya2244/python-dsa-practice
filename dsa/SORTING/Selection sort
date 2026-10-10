@@ -1,0 +1,53 @@
+# Selection Sort
+
+### What is Selection Sort?
+
+Selection Sort sorts an array by finding the **smallest element in the unsorted part** and swapping it into the correct position.
+
+We repeat this until the array is sorted.
+
+### Example
+
+`[30, 10, 40, 20]`
+
+- Pass 1: Find `10` and swap it with `30` → `[10, 30, 40, 20]`
+- Pass 2: Find `20` and swap it with `30` → `[10, 20, 40, 30]`
+- Pass 3: Find `30` and swap it with `40` → `[10, 20, 30, 40]`
+
+### Code
+
+```python
+arr = [30, 10, 40, 20]
+
+for i in range(len(arr) - 1):
+    min_index = i
+
+    for j in range(i + 1, len(arr)):
+        if arr[j] < arr[min_index]:
+            min_index = j
+
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+
+print(arr)
+```
+
+Output: `[10, 20, 30, 40]`
+
+### Understanding the variables
+
+- `i`: The position where we want to place the smallest element.
+- `min_index`: The index of the smallest element found so far.
+- `j`: Searches the remaining unsorted elements.
+- `arr[j]`: The value currently being checked.
+- `arr[min_index]`: The smallest value found so far.
+- `arr[i]`: The value at the position we want to fix.
+
+### Easy way to remember
+
+**Find the smallest → Swap → Repeat**
+
+### Time complexity
+
+- Best case: O(n²)
+- Average case: O(n²)
+- Worst case: O(n²)
