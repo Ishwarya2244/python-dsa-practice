@@ -1,1 +1,14 @@
 
+Merge Sort :
+
+1. Divide: Split the array into smaller parts.
+2. Sort: Keep dividing until each part contains one element.
+3. Merge: Combine the parts in ascending order.
+
+def merge_sort(arr):
+    if len(arr) <= 1:
+        return arr
+
+def merge_sort(arr): creates a function that accepts an array.
+len(arr) <= 1 checks whether the array has zero or one element.
+return arr returns it unchanged because a single element is already sorted.
