@@ -1,0 +1,20 @@
+--Q1. Write an SQL query to display only the Name column from the employees table.
+
+SELECT Name FROM Employees;
+
+--Q2. Write an SQL query to display all details of employees whose salary is greater than 30,000.
+
+SELECT * FROM Employees WHERE Salary > 30000;
+
+--Q3. Explain the difference between SELECT and WHERE in your own words.
+
+SELECT specifies which columns to display.
+WHERE specifies which rows to filter based on a condition.
+
+--Q4.Display the names of employees whose salary is less than 35,000.
+
+SELECT Name FROM Employees WHERE Salary < 35000;
+
+--Q5.Display all columns for employees who work in HR.
+
+SELECT * FROM Employees WHERE Department = 'HR';
